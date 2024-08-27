@@ -1,5 +1,5 @@
 function verificarTexto(texto) {
-    if (/^[a-z0-9\s.,]*$/.test(texto)) {
+    if (/^[a-z0-9\s.,]*$/.test(texto) && texto.trim() !== "") {
         warning.style.color = "black";
         warning.style.fontWeight = "normal";
         return true;
